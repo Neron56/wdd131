@@ -3,31 +3,39 @@
     --body-font: "Merriweather";
 }
 header {
-    padding-top:1px;
     width:100%;
     text-align: center;
     background-color: #c2e3ff;
 }
 #course-title{
+    font-size: 30px;
     font-weight: bold;
 }
 nav{
-    background-color: #d3d3d3;
+    background-color: rgb(255, 228, 192);
     display: flex;
     justify-content: space-evenly;
     color:black;
 }
 nav a:hover{
-    color: #e79600;
+    color: #a56b00;
 }
 main{
+    max-width:auto;
     display: grid;
     justify-content: center;
     text-align: center;
 }
 main div{
-    width:100%;
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-gap: 20px;
+}
+.card{
+    max-width:500px;
+    background-color: rgb(255, 228, 192);
+    border: 2px solid rgb(168, 142, 92)
+}
+#profile{
+    width:200px;
 }
