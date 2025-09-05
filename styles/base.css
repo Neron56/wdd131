@@ -1,0 +1,33 @@
+:root {
+    --heading-font: "PT Sans";
+    --body-font: "Merriweather";
+}
+header {
+    padding-top:1px;
+    width:100%;
+    text-align: center;
+    background-color: #c2e3ff;
+}
+#course-title{
+    font-weight: bold;
+}
+nav{
+    background-color: #d3d3d3;
+    display: flex;
+    justify-content: space-evenly;
+    color:black;
+}
+nav a:hover{
+    color: #e79600;
+}
+main{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+main div{
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 20px;
+}
