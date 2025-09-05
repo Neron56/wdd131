@@ -21,7 +21,7 @@ nav a:hover{
     color: #a56b00;
 }
 main{
-    max-width:auto;
+    max-width:1920px;
     display: grid;
     justify-content: center;
     text-align: center;
