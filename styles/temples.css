@@ -1,22 +1,43 @@
-
+main{
+max-width:1920px;
+display: grid;
+justify-content: center;
+text-align: center;
+}
+figure img{
+    width:300px
+}
+header{
+    display:grid;
+    padding: 0px 200px;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(225, 250, 255);
+    align-items:center;
+}
+nav a{
+    color:black
+}
 @media screen and (max-width: 640px) {
     body{
-        width: 100%;
         text-align: center;
-        display: grid;
 
     }
     header{
-        display:grid;
-        grid-template-columns: 1fr, 1fr;
-        background-color: rgb(213, 247, 255);
+        padding: 0px;
     }
     nav{
         width:100%;
         display:flex;
-        justify-content: center;
+        justify-content: space-between;
+        grid-column: 1/3
     }
-    #links{
+    
+    #album{
+        width:100%;
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    #navigation{
        display:none; 
     }
     #icon{

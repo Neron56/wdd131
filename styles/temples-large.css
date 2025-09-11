@@ -1,9 +1,15 @@
 #icon{
     display:none;
 }
-#links{
-    display:block;
+#navigation{
+    display:flex;
+    justify-content: space-around;
 }
 nav a:hover{
     color: #a56b00;
+}
+#album{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr
 }
