@@ -1,0 +1,25 @@
+
+@media screen and (max-width: 640px) {
+    body{
+        width: 100%;
+        text-align: center;
+        display: grid;
+
+    }
+    header{
+        display:grid;
+        grid-template-columns: 1fr, 1fr;
+        background-color: rgb(213, 247, 255);
+    }
+    nav{
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+    #links{
+       display:none; 
+    }
+    #icon{
+        display:block;
+    }
+}
