@@ -1,6 +1,41 @@
 @media screen and (max-width: 640px) {
-    
-    .data{
-        width: 100%;
-    }
+    .hero img{
+    height:900px;
+    position:static;
+}
+h2{
+    text-align: center;
+    padding-left: 0px;
+}
+#weather::after{
+    content: "";
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    padding-left: 30px;
+    background: url(../images/cloudyBreezeMobile.svg) no-repeat center/contain;
+}
+    #dataBlock{
+    opacity: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    position: static;
+    width: 300px;
+    margin: 0px auto 10px;
+}
+#weatherBlock{
+    opacity: 80%;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    width: 300px;
+    position:static;
+    margin: 0px auto;
+}
 }
