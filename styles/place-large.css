@@ -50,7 +50,7 @@ p{
     width: 30px;
     height: 30px;
     margin-left: 10px;
-    background: url(../images/cloudyBreeze.png) no-repeat center/contain;
+    background: url(../images/cloudyBreeze.svg) no-repeat center/contain;
 }
 #weatherBlock{
     opacity: 80%;
