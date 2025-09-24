@@ -1,0 +1,43 @@
+main{
+max-width:1920px;
+display: grid;
+justify-content: center;
+text-align: center;
+}
+figure img{
+    width:300px
+}
+header{
+    display:grid;
+    padding: 0px 200px;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(225, 250, 255);
+    align-items:center;
+}
+nav a{
+    color:black
+}
+#icon{
+    display:none;
+}
+#navigation{
+    display:flex;
+    justify-content: space-around;
+}
+nav a:hover{
+    color: #a56b00;
+}
+.res-grid{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+.res-grid section{
+    background-color: rgb(204, 245, 255);
+}
+.picture{
+    width:400px;
+    height:250px;
+}
