@@ -3,6 +3,14 @@
     --body-font: "Merriweather";
 }
 
+h1 h2 h3 h4 {
+    font-family: var(--heading-font);
+}
+
+p article div span {
+    font-family: var(--body-font);
+}
+
 main{
 max-width:1920px;
 display: grid;

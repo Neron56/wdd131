@@ -1,0 +1,25 @@
+:root{
+    --heading-font: "Merriweather";
+    --body-font: "Alan Sans";
+    --primary-color: rgb(255, 49, 22);
+    --secondary-color: rgb(238, 219, 195);
+    --tertiary-color: rgb(87, 31, 31);
+}
+
+header{
+    background-color: var(--tertiary-color);
+}
+h1{
+    font-family:  var(--heading-font);
+    color: var(--primary-color);
+}
+p{
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+}
+#information{
+    background-color: var(--secondary-color);
+}
+img{
+    width: 600px;
+}
