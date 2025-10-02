@@ -3,22 +3,60 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Temple Album</title>
-        <meta name="description" content="A photo album of temples to browse">
+        <title>product review page</title>
+        <meta name="description" content="A page to submit a product review">
         <meta name="author" content="Michael Shaw">
         <link href="styles/form-large.css" rel="stylesheet">
         <link href="styles/form.css" rel="stylesheet">
         <script src="scripts/form.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-
-        </header>
         <main>
+            <h1>Product Review</h1>
+            <form method="get" action="review.html">
+                <label>Product Name</label>
+                <select name="product" required>
+                    <option id="product" disabled selected>Select a Product</option>
+                </select>
 
+                <label>Overall Rating</label>
+                <div>
+                    <input type="radio" id="one" name="rating" required>&star;
+                    <input type="radio" id="two" name="rating">&star;&star;
+                    <input type="radio" id="three"  name="rating">&star;&star;&star;
+                    <input type="radio" id="four" name="rating">&star;&star;&star;&star;
+                    <input type="radio" id="five" name="rating">&star;&star;&star;&star;&star;
+                </div>
+
+                <label>Date of Installation</label> 
+                <input type="date" id="date" name="date" required> 
+
+                <div id="feature">
+                    <label id="featureLabel">
+                        Which features did you find useful in the product?<br>
+                        (check all that apply)
+                    </label>
+                    <input type="checkbox" id="durability" name="feature" value="durability">Durability
+                    <input type="checkbox" id="easeOfUse" name="feature" value="easeOfUse">Ease of Use
+                    <input type="checkbox" id="performance" name="feature" value="performance">Performance
+                    <input type="checkbox" id="design" name="feature" value="Design">Design
+                </div>
+
+                <label>Written Review(optional)</label>
+                <textarea></textarea> 
+                
+                <label>Your Name (optional)</label>
+                <input type="text" id="username" name="username">
+                
+                <input type="submit" value="Post Review">
+            </form>
         </main>
         <footer>
-
+            <p>&copy;<span id="currentyear"></span> Michael Shaw, Utah</p>
+            <p id="lastModified"></p>
         </footer>
     </body>
 </html>
