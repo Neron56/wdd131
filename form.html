@@ -17,12 +17,12 @@
         <main>
             <h1>Product Review</h1>
             <form method="get" action="review.html">
-                <label>Product Name</label>
+                <label for="product">Product Name</label>
                 <select name="product" required>
                     <option id="product" disabled selected>Select a Product</option>
                 </select>
 
-                <label>Overall Rating</label>
+                <label for="rating">Overall Rating</label>
                 <div>
                     <input type="radio" id="one" name="rating" required>&star;
                     <input type="radio" id="two" name="rating">&star;&star;
@@ -31,11 +31,11 @@
                     <input type="radio" id="five" name="rating">&star;&star;&star;&star;&star;
                 </div>
 
-                <label>Date of Installation</label> 
+                <label for="date">Date of Installation</label> 
                 <input type="date" id="date" name="date" required> 
 
                 <div id="feature">
-                    <label id="featureLabel">
+                    <label id="featureLabel" for="feature">
                         Which features did you find useful in the product?<br>
                         (check all that apply)
                     </label>
@@ -45,10 +45,10 @@
                     <input type="checkbox" id="design" name="feature" value="Design">Design
                 </div>
 
-                <label>Written Review(optional)</label>
-                <textarea></textarea> 
+                <label for="written">Written Review(optional)</label>
+                <textarea name="written"></textarea> 
                 
-                <label>Your Name (optional)</label>
+                <label for="username">Your Name (optional)</label>
                 <input type="text" id="username" name="username">
                 
                 <input type="submit" value="Post Review">
