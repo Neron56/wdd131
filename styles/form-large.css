@@ -18,9 +18,14 @@ form{
     background-color: rgb(198, 244, 255);
     row-gap: 10px;
 }
+select{
+    width:100%;
+}
+#date{
+    width: 100%;
+}
 #feature{
     display:grid;
-    grid-template-columns: 20px 1fr;
     justify-content: center;
     text-align: left;
     column-gap: 10px;
@@ -35,8 +40,10 @@ textarea{
     min-width: 100%;
     min-height: 50px;
 }
+#username{
+    width: 100%;
+}
 footer{
     display: flex;
     justify-content: center;
-    
 }

@@ -17,39 +17,42 @@
         <main>
             <h1>Product Review</h1>
             <form method="get" action="review.html">
-                <label for="product">Product Name</label>
-                <select name="product" required>
-                    <option id="product" disabled selected>Select a Product</option>
-                </select>
-
-                <label for="rating">Overall Rating</label>
+                <label>Product Name<br>
+                    <select name="product" required>
+                        <option id="product" disabled selected>Select a Product</option>
+                    </select>
+                </label>
                 <div>
-                    <input type="radio" id="one" name="rating" required>&star;
-                    <input type="radio" id="two" name="rating">&star;&star;
-                    <input type="radio" id="three"  name="rating">&star;&star;&star;
-                    <input type="radio" id="four" name="rating">&star;&star;&star;&star;
-                    <input type="radio" id="five" name="rating">&star;&star;&star;&star;&star;
+                    <p>Overall Rating</p>
+                    <input type="radio" id="one" name="rating" required><label>&star;</label>
+                    <input type="radio" id="two" name="rating"><label>&star;&star;</label>
+                    <input type="radio" id="three"  name="rating"><label>&star;&star;&star;</label>
+                    <input type="radio" id="four" name="rating"><label>&star;&star;&star;&star;</label>
+                    <input type="radio" id="five" name="rating"><label>&star;&star;&star;&star;&star;</label>
                 </div>
 
-                <label for="date">Date of Installation</label> 
-                <input type="date" id="date" name="date" required> 
+                <label>Date of Installation<br>
+                    <input type="date" id="date" name="date" required> 
+                </label> 
 
                 <div id="feature">
-                    <label id="featureLabel" for="feature">
+                    <p id="featureLabel">
                         Which features did you find useful in the product?<br>
-                        (check all that apply)
-                    </label>
-                    <input type="checkbox" id="durability" name="feature" value="durability">Durability
-                    <input type="checkbox" id="easeOfUse" name="feature" value="easeOfUse">Ease of Use
-                    <input type="checkbox" id="performance" name="feature" value="performance">Performance
-                    <input type="checkbox" id="design" name="feature" value="Design">Design
+                        (check all that apply)<br>
+                    </p>
+                        <label><input type="checkbox" id="durability" name="feature" value="durability">Durability</label>
+                        <label><input type="checkbox" id="easeOfUse" name="feature" value="easeOfUse">Ease of Use</label>
+                        <label><input type="checkbox" id="performance" name="feature" value="performance">Performance</label>
+                        <label><input type="checkbox" id="design" name="feature" value="Design">Design</label>
                 </div>
 
-                <label for="written">Written Review(optional)</label>
-                <textarea name="written"></textarea> 
+                <label>Written Review(optional)
+                    <textarea></textarea> 
+                </label>
                 
-                <label for="username">Your Name (optional)</label>
-                <input type="text" id="username" name="username">
+                <label>Your Name (optional)<br>
+                    <input type="text" id="username" name="username">
+                </label>
                 
                 <input type="submit" value="Post Review">
             </form>
