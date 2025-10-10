@@ -1,0 +1,60 @@
+:root{
+    --heading-font: "Merriweather";
+    --body-font: "Alan Sans";
+    --primary-color: rgb(255, 49, 22);
+    --secondary-color: rgb(238, 219, 195);
+    --tertiary-color: rgb(87, 31, 31);
+}
+body{
+    background-color: var(--secondary-color);
+}
+header{
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+header a{
+    color:var(--primary-color);
+}
+header a:hover{
+    color: var(--secondary-color);
+}
+h1 a{
+    text-decoration: none;
+}
+a{
+    color:var(--tertiary-color)
+}
+a:hover{
+    color: var(--primary-color);
+}
+main{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+footer{
+    background-color: var(--tertiary-color);
+    padding:10px;
+    display: flex;
+    justify-content: center;
+}
+h1, h2{
+    font-family:  var(--heading-font);
+    color: var(--primary-color);
+}
+main p{
+    font-family: var(--body-font);
+    width: 50%;
+}
+footer p{
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+}
+img{
+    width: 600px;
+    border: 2px solid rgb(131, 87, 45);
+    margin-bottom: 20px;
+}

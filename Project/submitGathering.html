@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <meta name="description" content="A mock home page for a site created for WDD 131">
+        <meta name="author" content="Michael Shaw">
+        <title>Submit your Party</title>
+        <script src="scripts/submitGathering.js" defer></script>
+        <link rel="stylesheet" href="styles/submitGathering-large.css">
+        <link rel="stylesheet" href="styles/submitGathering.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Merriweather:opsz,wght@18..144,300..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html">Squad up Adventures</a></h1>
+            <a href="findGathering.html"><h3>Find a Gathering</h3></a>
+            <a href="submitGathering.html"><h3>Submit a Gathering</h3></a>
+        </header>
+        <main>
+            <h2>Welcome to the party!</h2>
+            <p>
+                Couldn't <a href="findGathering.html">find the perfect game?</a> No worries, just create your own! <br>
+                *All fields are required!
+            </p>
+            <div id="selectedCampaign">
+                <form method="get" action="application.html">
+                    <label id="groupName">Name of the group<br>
+                        <input type="text" id="name" name="name" required>
+                    </label>
+                    <div class="infoClump">
+                        <label>What day is the campaign wanting to start?<br>
+                            <input type="date" id="date" name="date" required>
+                        </label>
+                        <label>How many players are there?<br>
+                            <input type="number" id="count" name="count" required>
+                        </label>
+                        <label>What is your max player count?<br>
+                            <input type="number" id="max" name="max" required>
+                        </label>
+                    </div>
+                    <div class="infoClump" id="role">
+                        <label>What city is the party gathering in?<br>
+                            <input type="text" id="place" name="place" required>
+                        </label>
+                        <p>Are you looking for a Dungeon Master?</p>
+                        <div>
+                            <label>
+                                <input type="radio" id="yes" name="dm" required>Yes
+                            </label>
+                            <label>
+                                <input type="radio" id="no" name="dm">No
+                            </label>
+                        </div>
+                        <label id="requestedEmail">Your email we'll send requests to:<br>
+                            <input type="email" id="email" name="email" required>
+                        </label>
+                    </div>
+                    <label id="description">Your short description (please limit to 3 sentences)<br>
+                        <textarea required></textarea>
+                    </label>
+                    <input type="submit" value="Get on the List" id="submit">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentyear"></span> Michael Shaw, Utah</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

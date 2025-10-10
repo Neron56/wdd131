@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <meta name="description" content="A place to see available submitted gatherings, created for WDD 131">
+        <meta name="author" content="Michael Shaw">
+        <title>Find a Gathering</title>
+        <script src="scripts/findGathering.js" defer></script>
+        <link rel="stylesheet" href="styles/findGathering-large.css">
+        <link rel="stylesheet" href="styles/findGathering.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Merriweather:opsz,wght@18..144,300..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html">Squad up Adventures</a></h1>
+            <a href="findGathering.html"><h3>Find a Gathering</h3></a>
+            <a href="submitGathering.html"><h3>Submit a Gathering</h3></a>
+        </header>
+        <main>
+                <h2>Check out what we have!</h2>
+                <p id="blurb">
+                    Here's a table of all the current Campaigns that either seek a
+                    Dungeon Master, Players, or both! Feel free to browse. If you find
+                    one that you like, click the campaign request button and fill out
+                    a bit about yourself. This will be sent to the poster of the message
+                    and they will get in contact with you if you are what they are
+                    looking for!<br>
+                    If you dont see one you like, feel free to <a href="submitGathering.html">submit your own!</a>
+                </p>
+            <table id="partyTable">
+                <tr>
+                    <th>Campiagn Name</th>
+                    <th>Party size</th>
+                    <th>DM Status</th>
+                    <th>Short Description</th>
+                    <th>Start Date</th>
+                    <th>City to Meet in</th>
+                    <th>Send Them a Message!</th>
+                </tr>
+            </table>
+            <div id="selectedCampaign">
+                <h2>This campaign awaits you!</h2>
+                <h3 id="campaignName">(Select a Campaign)</h3>
+                <p id="shortDescription">Select a campaign from the table above and you will be able to send a
+                    message to the group here!
+                </p>
+                <form method="get" action="application.html">
+                    <div class="infoClump">
+                        <label>Name<br>
+                            <input type="text" id="name" name="name" required>
+                        </label>
+                        <label>Phone Number<br>
+                            <input type="text" id="number" name="number" required>
+                        </label>
+                        <label>Email (optional)<br>
+                            <input type="text" id="email" name="email">
+                        </label>
+                    </div>
+                    <div class="infoClump" id="role">
+                        <p>Joining as:</p>
+                        <label>
+                        <input type="radio" id="dm" name="role" required>DM
+                        </label>
+                        <label>
+                            <input type="radio" id="player" name="role">Player
+                        </label>
+                    </div>
+                    <label id="message">Your Message (optional)<br>
+                        <textarea></textarea>
+                    </label>
+                    <input type="submit" value="Send your Request">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentyear"></span> Michael Shaw, Utah</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
